@@ -1,4 +1,6 @@
 plotly==5.10.0
 evidently==0.1.58.dev0
-mlflow==1.29.0
+mlflow==1.25.0 #1.29.0
 kaleido==0.2.1
+protobuf==3.20
+numpy==1.19.5
