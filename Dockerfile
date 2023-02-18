@@ -5,7 +5,7 @@ ARG IMAGE=python:3.9.16
 FROM $IMAGE
 
 # Create the user that will run the app
-RUN adduser --disabled-password --gecos '' ml-api-user
+RUN adduser --disabled-password --gecos '' ml-user
 
 # Create directory IN container and change to it
 WORKDIR /opt/historical_data_drift
@@ -18,10 +18,10 @@ RUN pip install -r /opt/historical_data_drift/requirements.txt --no-cache-dir
 
 # Change permissions
 RUN chmod +x /opt/historical_data_drift/run.sh
-RUN chown -R ml-api-user:ml-api-user ./
+RUN chown -R ml-user:ml-user ./
 
 # Change user to the one created
-USER ml-api-user
+USER ml-user
 
 # Expose port
 EXPOSE 5000
@@ -43,11 +43,11 @@ CMD ["bash", "./run.sh"]
 # -d to detach/get the shell back,
 # --name if we want to choose conatiner name (else, one randomly chosen)
 # --rm: automatically remove container after finishing (irrelevant in our case, but...)
-#   docker run -d --rm -p 8001:8001 -e PORT=8001 --name historical_data_drift historical_data_drift:latest
+#   docker run -d --rm -p 5001:5000 --name historical_data_drift historical_data_drift:latest
 #
 # Check the API locally: open the browser
-#   http://127.0.0.0:5000
-#   Use the web API
+#   http://127.0.0.1:5001
+#   Use the web interface
 # 
 # Check the running containers: check the name/id of our container,
 # e.g., census_model_app
