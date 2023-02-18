@@ -1,0 +1,16 @@
+
+version: '3.1'
+# Same as 
+#   docker run -p 5000:5000 historical_data_drift:latest
+# Run as
+#   docker-compose up -d
+# Check containers, logs
+#   docker-compose ps
+#   docker-compose logs
+# Stop containers
+#   docker-compose down
+services:
+  census_model_api:
+    image: historical_data_drift:latest
+    ports:
+      - '5000:5000'
