@@ -1,6 +1,8 @@
 # Historical Data Drift
 
-> I forked this repository from [cd0583-historical-data-drift](https://github.com/udacity/cd0583-historical-data-drift) and followed the instructions below. However, it didn't work due to version collisions. I will come back to this when I have time.
+> I forked this repository from [cd0583-historical-data-drift](https://github.com/udacity/cd0583-historical-data-drift) and followed the instructions below. However, it didn't work, probably due to version collisions.
+> I also tried to make it work in a docker container (see `Dockerfile` and `docker-compose.yaml`), but it didn't work either.
+> I will come back to this when I have time.
 
 ---
 
