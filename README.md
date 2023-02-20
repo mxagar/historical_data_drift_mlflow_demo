@@ -1,8 +1,12 @@
 # Historical Data Drift
 
-> I forked this repository from [cd0583-historical-data-drift](https://github.com/udacity/cd0583-historical-data-drift) and followed the instructions below. However, it didn't work, probably due to version collisions.
+> I forked this repository from [cd0583-historical-data-drift](https://github.com/udacity/cd0583-historical-data-drift) and followed the instructions below. However, it didn't work on my local machine, probably due to version collisions.
 > I also tried to make it work in a docker container (see `Dockerfile` and `docker-compose.yaml`), but it didn't work either.
-> I will come back to this when I have time.
+> When I deployed it to Heroku, it worked, though! You can access the web app here:
+> 
+>   [https://historical-data-drift-mflow.herokuapp.com/](https://historical-data-drift-mflow.herokuapp.com/)
+> 
+> I will come back to this when I have time to fix the versioning issue.
 
 ---
 
