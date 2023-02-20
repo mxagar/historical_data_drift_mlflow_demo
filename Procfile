@@ -1,0 +1,1 @@
+web: python expo.py & mlflow ui --host 0.0.0.0 --port ${PORT}
